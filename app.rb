@@ -9,6 +9,6 @@ class App < Sinatra::Base
   
   post '/' do
     pgl = PigLatinizer.new
-    @piglatin = pgl.piglatinize(params[:user_input])
+    @piglatin = pgl.piglatinize(params[:user_phrase])
   end
 end
